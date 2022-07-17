@@ -28,7 +28,7 @@ function Header({ setCoordinates }) {
                     <Typography variant="h6" className={classes.title}>
                         Explore new places
                     </Typography>
-                    <Autocomplete apiKey= 'AIzaSyAtyd133dnJm7vGd2nD1VhcpcTkZrOe1Z0' onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
+                    <Autocomplete apiKey={process.env.REACT_APP_GOOGLE_API_KEY} onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
                         <div className={classes.search}>
                             <div className={classes.searchIcon}>
                                 <SearchIcon />
